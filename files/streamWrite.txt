@@ -1,0 +1,6 @@
+Sakshi Vishnoi is a highly motivated B.Tech student specializing in Mobile Development with strong
+proficiency in Flutter, Dart, and Firebase. Demonstrates expertise in building scalable applications, data
+structures, and algorithms, complemented by leadership experience and notable achievements in
+competitive programming and hackathons.
+
+Helloo
