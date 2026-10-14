@@ -11,5 +11,9 @@ app.get('/' , (req,res)=>{
 app.get('/profile' , function(req, res){
     res.send("Say Hello Sakhi");
 })
+app.get('/profile/:username' , function(req, res){
+    res.send(`Hello from ${req.params.username}`);
+})
+
 
 app.listen(3000);
