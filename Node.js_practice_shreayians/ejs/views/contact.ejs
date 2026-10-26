@@ -1,0 +1,180 @@
+<!-- 
+    This is a working contact form. 
+
+    Replace <form-id> with your form's unique id.
+
+    Create your form id here 👉 https://html.contact/
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Job Application Form - HTML CSS ONLY</title>
+  <style>
+    body {
+  margin: 0;
+  color: #1A1D29;
+  background: #FFFFFF;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.hc-page {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 56px 20px;
+  overflow: hidden;
+}
+
+.hc-page::after {
+  content: "";
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  bottom: -170px;
+  height: 360px;
+  background: #2563EB;
+  transform: rotate(-4deg);
+  z-index: 0;
+}
+
+.hc-header,
+.hc-form {
+  position: relative;
+  z-index: 1;
+}
+
+.hc-header {
+  max-width: 520px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.hc-eyebrow {
+  margin: 0 0 8px;
+  color: #2563EB;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  color: #0F172A;
+  font-size: clamp(40px, 7vw, 64px);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  font-weight: 900;
+}
+
+.hc-subtext {
+  margin: 14px 0 0;
+  color: #475569;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.hc-form {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  max-width: 420px;
+  padding: 24px;
+  border: 1px solid #D4D8E0;
+  border-radius: 12px;
+  background: #FFFFFF;
+  color: #1A1D29;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.14);
+}
+
+.hc-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1A1D29;
+}
+
+.hc-input {
+  min-height: 30px;
+  border: 1px solid #D4D8E0;
+  border-radius: 6px;
+  background: #FFFFFF;
+  color: #1A1D29;
+  padding: 10px 12px;
+  font: inherit;
+  outline: none;
+  box-shadow: none;
+}
+
+.hc-input:focus {
+  border-color: #2563EB;
+}
+
+.hc-file-name {
+  margin: -4px 0 4px;
+  color: #1A1D29;
+  font-size: 13px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.hc-button {
+  min-height: 44px;
+  border: 0;
+  border-radius: 8px;
+  background: #2563EB;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hc-button:hover {
+  filter: brightness(0.96);
+}
+  </style>
+</head>
+<body>
+  <main class="hc-page">
+    <h1><%=age%> <%=name%></h1>
+    <div class="hc-header">
+      <p class="hc-eyebrow">Now hiring</p>
+      <h1>Simple Job Application Form</h1>
+      <p class="hc-subtext">
+        Send your details, resume, and a quick note. We’ll review your application and follow up soon.
+      </p>
+    </div>
+
+    <form class="hc-form" action="https://html.contact/f/hc_pub_REPLACE" method="POST" enctype="multipart/form-data">
+      <label class="hc-label" for="name">Full name</label>
+      <input class="hc-input" id="name" name="name" type="text" autocomplete="name" required>
+
+      <label class="hc-label" for="email">Email</label>
+      <input class="hc-input" id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+
+      <label class="hc-label" for="phone">Phone</label>
+      <input class="hc-input" id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
+
+      <label class="hc-label" for="position">Position</label>
+      <select class="hc-input" id="position" name="position" required>
+        <option value="">Select one</option>
+        <option value="frontend-engineer">Frontend Engineer</option>
+        <option value="product-designer">Product Designer</option>
+        <option value="customer-support">Customer Support</option>
+      </select>
+
+      <label class="hc-label" for="resume">Resume</label>
+      <input class="hc-input" id="resume" name="resume" type="file" required accept=".pdf,.doc,.docx">
+
+      <label class="hc-label" for="cover_letter">Cover note</label>
+      <textarea class="hc-input" id="cover_letter" name="cover_letter" rows="5"></textarea>
+
+      <button class="hc-button" type="submit">Send application</button>
+    </form>
+  </main>
+</body>
+</html>

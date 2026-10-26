@@ -5,7 +5,7 @@
     "nodemon": "^3.1.14"
   },
   "scripts": {
-    "start": "node express.js/script.js",
-    "dev": "nodemon express.js/script.js"
+    "start": "node ejs/script.js",
+    "dev": "nodemon ejs/script.js"
   }
 }
