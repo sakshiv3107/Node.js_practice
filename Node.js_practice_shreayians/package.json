@@ -5,7 +5,7 @@
     "nodemon": "^3.1.14"
   },
   "scripts": {
-    "start": "node ejs/script.js",
-    "dev": "nodemon ejs/script.js"
+    "start": "node Task/script.js",
+    "dev": "nodemon Task/script.js"
   }
 }
