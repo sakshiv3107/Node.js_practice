@@ -43,10 +43,6 @@ const userModel = require('./users')
 // })
 
 
-
-//SESSION AND COOKIES 
-
-
 //SESSIONS ANS COOKIES 
 
 //SESSIONS
